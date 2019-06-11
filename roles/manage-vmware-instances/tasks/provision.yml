@@ -231,13 +231,13 @@
 #   until: docs_instances.finished
 #   retries: 300
 #   with_items: "{{ docs_jobs.results }}"
-
-- name: Wait for tower instance creation to complete
-  async_status: jid="{{ item.ansible_job_id }}"
-  register: tower_instances
-  until: tower_instances.finished
-  retries: 300
-  with_items: "{{ tower_jobs.results }}"
+# 
+# - name: Wait for tower instance creation to complete
+#   async_status: jid="{{ item.ansible_job_id }}"
+#   register: tower_instances
+#   until: tower_instances.finished
+#   retries: 300
+#   with_items: "{{ tower_jobs.results }}"
 
 # - name: Wait for windows instance creation to complete
 #   async_status: jid="{{ item.ansible_job_id }}"
@@ -339,11 +339,11 @@
 #   with_items: "{{ workstation_instances.results | map(attribute='instance') | list }}"
 
 ################### Wait for Instances ###################
-
-- name: Tower | Wait for SSH to come up
-  wait_for_connection:
-  delegate_to: "{{ item }}"
-  with_items: "{{ groups['tower'] }}"
+#
+# - name: Tower | Wait for SSH to come up
+#   wait_for_connection:
+#   delegate_to: "{{ item }}"
+#   with_items: "{{ groups['tower'] }}"
 
 # - name: GitLab | Wait for SSH to come up
 #   wait_for_connection:
