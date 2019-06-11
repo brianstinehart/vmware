@@ -120,7 +120,7 @@ vCenterUsername: root
 vCenterPassword: r3dh4t1!
 vCenterDatacenter: DC01
 vCenterCluster: Cluster01
-vCenterFolder: /Datastore/isos
+vCenterFolder: DC01/vm
 # vCenterCloneSourceWindows: Win2016Template
 # VCenterCloneSnapshotWindows: LinkedSS
 vCenterCloneSourceLinux: rhel-server-7.3-x86_64-dvd.iso
