@@ -5,7 +5,7 @@
 
 # Where to provision instances (ec2, azure, vmware)
 instance_loc: vmware
-name_prefix: "Bvmware"
+name_prefix: "BendigoAdelaideBank"
 
 # Needed for AD and windows client provision
 dns_domain_name: "ansibleworkshop.com"
@@ -83,7 +83,7 @@ gitlab_smtp_enable: "false"
 ######################## EC2 INFO ########################
 ##########################################################
 
-ec2_region: "us-east-1"
+ec2_region: "ap-southeast-2"
 
 # If this is defined, create a dns entries in the route53 zone
 #public_dns_zone: "labs.ansibleworkshop.com"
@@ -115,15 +115,15 @@ ec2_windows_instance_ami_type: win2019_core # See the ec2_image_names variable f
 ###################### VMWARE INFO #######################
 ##########################################################
 
-vCenterServer: 10.0.1.2
-vCenterUsername: administrator
-vCenterPassword: MyP@ssw0rd21
-vCenterDatacenter: Datacenter
-vCenterCluster: Cluster
-vCenterFolder: /Workshops
-vCenterCloneSourceWindows: Win2016Template
-VCenterCloneSnapshotWindows: LinkedSS
-vCenterCloneSourceLinux: CentosBase
+vCenterServer: 129.146.194.42
+vCenterUsername: root
+vCenterPassword: r3dh4t1!
+vCenterDatacenter: DC01
+vCenterCluster: Cluster01
+vCenterFolder: /Datastore/isos
+# vCenterCloneSourceWindows: Win2016Template
+# VCenterCloneSnapshotWindows: LinkedSS
+vCenterCloneSourceLinux: rhel-server-7.3-x86_64-dvd.iso
 VCenterCloneSnapshotLinux: LinkedSS
 VCenterLinkedClone: true
 vCenterPortGroup: Workshops
