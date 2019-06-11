@@ -4,8 +4,8 @@
 ##########################################################
 
 # Where to provision instances (ec2, azure, vmware)
-instance_loc: ec2
-name_prefix: "skylight"
+instance_loc: vmware
+name_prefix: "Bvmware"
 
 # Needed for AD and windows client provision
 dns_domain_name: "ansibleworkshop.com"
@@ -30,7 +30,7 @@ ldap_access_filter: "(&(objectClass=user)(memberOf=CN=Ansible Users,CN=Users,{{ 
 tower_ldap_search_dn: "CN=Users,{{ ldap_search_base }}"
 
 # Root user (ec2-user for AWS)
-root_user: ec2-user
+root_user: root
 root_password: MyPassw0rd21
 centos_root_user: centos
 
