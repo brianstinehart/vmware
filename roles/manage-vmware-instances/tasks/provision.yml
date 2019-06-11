@@ -109,7 +109,7 @@
     template: "{{ vmware_tower_template }}"
     port: 443
     # snapshot_src: "{{ VCenterCloneSnapshotLinux | default(omit, True) }}"
-    linked_clone: "{{ VCenterLinkedClone | default(omit, True) }}"
+    # linked_clone: "{{ VCenterLinkedClone | default(omit, True) }}"
     state: poweredon
     validate_certs: false
     hardware:
