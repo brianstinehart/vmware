@@ -107,7 +107,7 @@
     folder: "{{ vCenterFolder }}"
     name: "{{ name_prefix }}-s{{ item }}-tower"
     template: "{{ vmware_tower_template }}"
-    port: 80
+    port: 443
     # snapshot_src: "{{ VCenterCloneSnapshotLinux | default(omit, True) }}"
     linked_clone: "{{ VCenterLinkedClone | default(omit, True) }}"
     state: poweredon
