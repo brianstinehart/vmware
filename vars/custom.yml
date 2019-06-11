@@ -126,7 +126,7 @@ vCenterFolder: DC01/vm
 vCenterCloneSourceLinux: rhel7-vmw
 VCenterCloneSnapshotLinux: LinkedSS
 VCenterLinkedClone: true
-vCenterPortGroup: Workshops
+vCenterPortGroup: VM Network
 vCenterPortGroupExt: External
 
 vmware_tower_template: "{{ vCenterCloneSourceLinux }}"
