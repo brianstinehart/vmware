@@ -57,17 +57,17 @@
 #     - gitlab
 #   roles:
 #     - { role: gitlab-postconfig }
-
-- name: Configure Ansible Host
-  hosts: tower
-  become: True
-  gather_facts: True
-  vars_files:
-    - [ 'vars/custom.yml', 'vars/main.yml' ]
-  tags:
-    - ansible-tower
-  roles:
-    - linux-common
+#
+# - name: Configure Ansible Host
+#   hosts: tower
+#   become: True
+#   gather_facts: True
+#   vars_files:
+#     - [ 'vars/custom.yml', 'vars/main.yml' ]
+#   tags:
+#     - ansible-tower
+#   roles:
+#     - linux-common
     # - ansible-tower
 #
 # - name: Configure Windows Workstation
