@@ -115,7 +115,7 @@ ec2_windows_instance_ami_type: win2019_core # See the ec2_image_names variable f
 ###################### VMWARE INFO #######################
 ##########################################################
 
-vCenterServer: 129.146.194.42
+vCenterServer: 129.146.197.93
 vCenterUsername: root
 vCenterPassword: r3dh4t1!
 vCenterDatacenter: DC01
