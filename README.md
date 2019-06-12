@@ -2,15 +2,15 @@
 
 # Ansible Windows Workshop
 
-These ansible playbooks provision a lab on AWS for use in delivering a workshop focused on Windows.  This provisions the following:
+These ansible playbooks provision VMs on VMware focused on Linux.  This provisions the following:
 
 * Base Infrastructure
+  * An Ansible Tower control node
+* Optional Additions
   * A Microsoft Active Directory Server
   * A Gitlab server
-* Per-Student Infrastructure
-  * An Ansible Tower control node
   * A Windows Workstation for interacting with the environment
-  * A Windows Host(s) for running playbooks against
+  * Windows Host(s) for running playbooks against
 
 The client pre-requisite to use this workshop is simply to have an RDP client which can connect to the Windows Workstation.  If RDP is not allowed through a corporate firewall, a HTML5 RDP client is also running on each Workstation.  As the HTML5 client is fairly slow, it is recommended that students use normal RDP if at all possible.  All other activities will take place from that Workstation.  The Workstation has Visual Studio Code, Chrome, Putty, and Git for Windows.  
 
