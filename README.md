@@ -1,6 +1,6 @@
 ![vmware](docs/lab_guide/images/Ansible_logo.svg.png)![vmware](docs/lab_guide/images/vmware-logo1.png)
 
-# Ansible Windows Workshop
+# Ansible VMware Deployment
 
 These ansible playbooks provision VMs on VMware focused on Linux.  This provisions the following:
 
