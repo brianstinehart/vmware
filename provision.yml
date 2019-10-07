@@ -14,7 +14,7 @@
   - include_role:
       name: "manage-{{ instance_loc }}-instances"
 
-#- name: Configure Active Directory Domain Controller
+# - name: Configure Active Directory Domain Controller
 #  hosts: windows_domain_controllers
 #  gather_facts: True
 #  vars_files:
