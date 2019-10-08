@@ -5,7 +5,7 @@
 
 # Where to provision instances (ec2, azure, vmware)
 instance_loc: vmware
-name_prefix: "BendigoAdelaideBank"
+name_prefix: "RhipeTest"
 
 # Needed for AD and windows client provision
 dns_domain_name: "ansibleworkshop.com"
@@ -115,7 +115,7 @@ ec2_windows_instance_ami_type: win2019_core # See the ec2_image_names variable f
 ###################### VMWARE INFO #######################
 ##########################################################
 
-vCenterServer: 129.146.197.93
+vCenterServer: vcenter-ae51.rhpds.opentlc.com
 vCenterUsername: root
 vCenterPassword: r3dh4t1!
 vCenterDatacenter: DC01

@@ -14,6 +14,16 @@
   - include_role:
       name: "manage-{{ instance_loc }}-instances"
 
+- name: Run PowerShell Script
+  hosts: tower
+  gather_facts: True
+  vars_files:
+    - [ 'vars/vmware.yml' ]
+  tags:
+    - ansible-tower
+  roles:
+    - powershell-script
+
 # - name: Configure Active Directory Domain Controller
 #  hosts: windows_domain_controllers
 #  gather_facts: True
