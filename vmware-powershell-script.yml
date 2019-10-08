@@ -9,4 +9,4 @@
   ansible_vmware_user: root
   ansible_vmware_password: r3dh4t1!
   ansible_vmware_validate_certs: no  # default is yes
-  ansible_vmware_guest_path: DC01/vm/{{ inventory_hostname }}
+  ansible_vmware_guest_path: DC01/vm/rhel7
